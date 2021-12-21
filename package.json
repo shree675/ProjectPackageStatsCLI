@@ -12,9 +12,7 @@
     "chalk": "^4.1.0",
     "commander": "^8.3.0",
     "conf": "^10.1.1",
-    "findit": "^2.0.0",
-    "npm-module-stats": "0.0.8",
-    "package-size": "^2.0.0"
+    "findit": "^2.0.0"
   },
   "bin": {
     "pkgcl": "index.js"
