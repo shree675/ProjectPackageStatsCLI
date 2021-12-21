@@ -3,6 +3,8 @@ const chalk = require("chalk");
 var finalpaths = [];
 var allpackages = [];
 var package = 0;
+var name = "";
+var packagejson = "";
 
 const check = async () => {
   const fs = require("fs").promises;
@@ -83,7 +85,13 @@ const extractPackages = async () => {
       process.cwd() + "/" + finalpaths[i] + "/package.json",
       "utf8"
     ).then((data) => {
+      if (packagejson === "") {
+        packagejson = data;
+      }
       const packageJSON = JSON.parse(data);
+      if (name === "") {
+        name = packageJSON.name;
+      }
       for (dependency in packageJSON.dependencies) {
         if (packageJSON.dependencies.hasOwnProperty(dependency)) {
           allpackages.push(dependency);
@@ -92,7 +100,11 @@ const extractPackages = async () => {
       counter++;
       if (counter === finalpaths.length) {
         allpackages = [...new Set(allpackages)];
-        console.log("Your dependencies in the project:");
+        console.log(
+          "Your dependencies in the project " +
+            chalk.bgWhite(chalk.black(name)) +
+            ":"
+        );
         displayPackages();
       }
     });

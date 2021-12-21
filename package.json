@@ -16,8 +16,5 @@
   },
   "bin": {
     "pkgcl": "index.js"
-  },
-  "browser": {
-    "child_process": false
   }
 }
