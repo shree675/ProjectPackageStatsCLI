@@ -26,9 +26,11 @@ $ pkgcl pjson
 It checks all the important fields and lists them. It notifies if a field is missing or incomplete. This helps in ensuring that the package.json is well refined before the release of the product.
 
 ## Screenshots
+(Coming soon)
 
 ## Steps To Run Locally
 * Clone this repository on your local machine.
+* Open a terminal in the root directory.
 * Run the following:
 ```
 $ npm install
