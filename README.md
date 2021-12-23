@@ -26,7 +26,10 @@ $ pkgcl pjson
 It checks all the important fields and lists them. It notifies if a field is missing or incomplete. This helps in ensuring that the package.json is well refined before the release of the product.
 
 ## Screenshots
-(Coming soon)
+
+<img src="https://user-images.githubusercontent.com/58718144/147261580-21504659-83de-4683-ab61-2067e48cffba.png" width="650" />
+
+<img src="https://user-images.githubusercontent.com/58718144/147261643-0d4f3cfc-dfed-40a1-a463-a212ef6a21f5.png" width="650" />
 
 ## Steps To Run Locally
 * Clone this repository on your local machine.
