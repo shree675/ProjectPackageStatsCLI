@@ -2,7 +2,7 @@
 >pkgcl \<command\> [options]
 
 ## About
-This is a basic CLI tool that contains two commands that help list out all the dependencies installed in the project and check the status of package.json file.
+This is a basic CLI tool that contains two commands that help list out all the dependencies installed in the project and check the status of package.json file in your full stack project.
 
 ## Commands and Uses
 1. ***checkdeps***
